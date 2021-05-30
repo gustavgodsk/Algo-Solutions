@@ -1,0 +1,119 @@
+
+
+body {
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #111212;
+}
+
+.centerpage {
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(92,37,231,1), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  min-width: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgdiv {
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imgdiv img {
+  height: 100%;
+  padding-left: 20px;
+
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+
+.overskrift {
+
+}
+
+h1 {
+  margin: 0;
+  color: #d7d6d7;
+
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+h1 span {
+  color: #4a87ff;
+}
+
+.h1 {
+  padding: 20px;
+}
+
+
+.btn {
+  margin-top: 80px;
+}
+button {
+  background-color: rgba(92,37,231,1); /* Green */
+  padding: 10px 20px;
+
+  border: none;
+  color: #d7d6d7;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.algoritme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text {
+  margin: 0px 50px 30px 50px;
+  padding: 10px 20px;
+  border: 0px solid;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  background-color: #d7d6d7;
+  width: 100px;
+  text-transform: uppercase;
+}
+
+.kildekode pre {
+  color:#d7d6d7;
+}
