@@ -26,13 +26,9 @@ body {
 
 .centerpage {
   border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      rgba(92,37,231,1), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-  width: 50%;
+  border-image: linear-gradient( to bottom, rgba(92,37,231,1), rgba(0, 0, 0, 0) ) 1 100%;
+  border-left: none;
+  width: 700px;
   margin: auto;
   height: 100%;
   min-width: 50%;
@@ -121,4 +117,23 @@ button {
 
 .kildekode pre {
   color:#d7d6d7;
+
+}
+
+.fixed {
+  position: fixed;
+  height: 100px;
+  top: 50px;
+  left: 8%;
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+}
+
+.fixed img {
+  height: 100%;
+}
+
+img {
+  user-select: none;
 }

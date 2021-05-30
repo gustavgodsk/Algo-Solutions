@@ -1,3 +1,6 @@
+const fixed = document.getElementById("fixed");
+const centerpage = document.getElementById("centerpage");
+
 
 var angle = 0;
 var slider;
@@ -35,15 +38,31 @@ function branch(len) {
 
 
 
+
+
 setTimeout(function(){
   const kildekode = document.createElement("div");
   kildekode.className = "h1";
   kildekode.style.marginTop = "30px";
+  kildekode.id = "logo"
   kildekode.innerHTML = "<h1>fractal.<span>Kildekode</span>()</h1>"
   document.body.appendChild(kildekode);
   const div = document.createElement("div");
   div.className = "kildekode";
   document.body.appendChild(div);
   div.appendChild(document.getElementById("pre"));
-}, 50);
+
+  addEventListener("scroll", () => {
+
+    if (isInViewport(document.getElementById("logo"))){
+      fixed.style.visibility = "hidden";
+
+    }
+    else {
+      fixed.style.visibility = "visible";
+    }
+  })
+
+  console.log(centerpage)
+}, 100);
 
