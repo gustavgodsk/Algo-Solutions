@@ -132,6 +132,7 @@ button {
 
 .fixed img {
   height: 100%;
+  padding-left: 10px;
 }
 
 img {
