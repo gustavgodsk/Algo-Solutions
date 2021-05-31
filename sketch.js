@@ -1,7 +1,6 @@
 const fixed = document.getElementById("fixed");
 const centerpage = document.getElementById("centerpage");
 
-
 var angle = 0;
 var slider;
 
@@ -51,12 +50,18 @@ setTimeout(function(){
   div.className = "kildekode";
   document.body.appendChild(div);
   div.appendChild(document.getElementById("pre"));
+  
+  if (isInViewport(document.getElementById("logo"))){
+    fixed.style.visibility = "hidden";
+  }
+  else {
+    fixed.style.visibility = "visible";
+  }
 
   addEventListener("scroll", () => {
 
     if (isInViewport(document.getElementById("logo"))){
       fixed.style.visibility = "hidden";
-
     }
     else {
       fixed.style.visibility = "visible";
