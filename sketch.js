@@ -1,5 +1,6 @@
 const fixed = document.getElementById("fixed");
 const centerpage = document.getElementById("centerpage");
+const angleP = document.getElementById("angleP");
 
 var angle = 0;
 var slider;
@@ -9,12 +10,17 @@ function setup() {
   slider = createSlider(0, TWO_PI, PI / 4, 0.01);
 }
 
+function updateAngle() {
+  angleP.innerHTML = Math.floor(angle * 57.32484076433121) + "&deg";
+}
+
 function draw() {
   background("#111212");
   angle = slider.value();
   stroke(255);
   translate(200, height);
   branch(100);
+  updateAngle();
 }
 
 function branch(len) {
@@ -68,6 +74,5 @@ setTimeout(function(){
     }
   })
 
-  console.log(centerpage)
 }, 100);
 

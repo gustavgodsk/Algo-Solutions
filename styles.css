@@ -138,3 +138,17 @@ button {
 img {
   user-select: none;
 }
+
+
+.angle {
+  position: absolute;
+  color: #d7d6d7;
+  top: 1450px;
+  padding: 0%;
+  margin: 0;
+}
+
+.angle p {
+  margin: 0;
+  padding: 0;
+}
